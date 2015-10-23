@@ -8,6 +8,8 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraNavBar;
 using FirebirdSql.Data.FirebirdClient;
 using TimeManagerPlatinum_ExternalReports.Properties;
+using TimeManagerPlatinum_ExternalReports.ReportClasses;
+using TimeManagerPlatinum_ExternalReports.Reports;
 
 namespace TimeManagerPlatinum_ExternalReports
 {
@@ -59,7 +61,7 @@ namespace TimeManagerPlatinum_ExternalReports
 
         private void wastedTimeItem_LinkClicked(object sender, NavBarLinkEventArgs e)
         {
-            var parameters = new frmParameters();
+            var parameters = new FrmParameters();
             parameters.ShowDialog();
                            
             var reportParams = parameters.GetParameters();
@@ -72,7 +74,7 @@ namespace TimeManagerPlatinum_ExternalReports
 
         private void GetAccessVariance(Parameters reportParams)
         {
-            var dt = GetData(reportParams);
+            var dt =  ReportCalcs.GetVarianceData(reportParams);
             if (dt.Rows.Count == 0)
                 return;
 
@@ -131,36 +133,7 @@ namespace TimeManagerPlatinum_ExternalReports
 
             PostProcessing(ref lstWastedTime, reportParams);
             grdReport.DataSource = lstWastedTime;
-        }
-
-        private DataTable GetData(Parameters reportParams)
-        {
-            var dbPath = Utilities.GetDbPath();
-            if (dbPath == "")
-                Close();
-
-            var connString = Utilities.BuildConnectionString(dbPath);
-            var myConnection = new FbConnection(connString);
-            myConnection.Open();
-
-            var command =
-                new FbCommand(
-                    String.Format(
-                        "SELECT a.SHIFT, a.CODE, b.NAME, b.SURNAME, a.CLKTIME, a.IO, a.CLOCKADDRESS, a.CALCDATE " +
-                        "FROM CLOCKING a " +
-                        "INNER JOIN EMP b " +
-                        "ON a.CODE = b.EMP_NO " +
-                        "WHERE a.CLKTIME >= '{0}' AND a.CLKTIME <= '{1}' " +
-                        "AND a.CODE >= '{2}' AND a.CODE <= '{3}' " +
-                        "ORDER BY a.CODE, a.CLKTIME", reportParams.FromDateTime.ToString("dd.MM.yyyy, HH:mm:ss.000"),
-                        reportParams.ToDateTime.ToString("dd.MM.yyyy, HH:mm:ss.000"), reportParams.EmployeeFrom,
-                        reportParams.EmployeeTo), myConnection);
-            var adapter = new FbDataAdapter(command);
-            var dt = new DataTable();
-            var i = adapter.Fill(dt);
-            if (i <= 0) return dt;
-            return dt;
-        }
+        }                
 
         private void ProcessAccessIn(ref WastedTime line, ref List<WastedTime> lstWastedTime, CurrentInfo info)
         {
@@ -469,5 +442,23 @@ namespace TimeManagerPlatinum_ExternalReports
             XtraMessageBox.Show("File saved successfully");
         }
 
+        private void overtimeLessLost_LinkClicked(object sender, NavBarLinkEventArgs e)
+        {
+            var parameters = new FrmParameters();
+            parameters.ShowDialog();
+
+            var reportParams = parameters.GetParameters();
+            if (reportParams == null)
+                return;
+
+            //GetDataForWastedTimeReport(reportParams);
+            var reportData = ReportCalcs.GetOverTimeLessLostTime(reportParams);
+            grdReport.DataSource = reportData;
+
+            //Load Report
+            var report = new reportOTLessLost { DataSource = reportData };
+            documentViewer1.PrintingSystem = report.PrintingSystem;
+            report.CreateDocument();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace TimeManagerPlatinum_ExternalReports
 {
-    partial class frmParameters
+    partial class FrmParameters
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,7 @@
             this.dtTo = new DevExpress.XtraEditors.DateEdit();
             this.dtFrom = new DevExpress.XtraEditors.DateEdit();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
+            this.txtVariance = new DevExpress.XtraEditors.SpinEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -50,7 +51,18 @@
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtVariance = new DevExpress.XtraEditors.SpinEdit();
+            this.cmbCompany = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.cmbOccupation = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.cmbGrade = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.cmbCostCentre = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.cmbDepartment = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.cmbWorkPattern = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chkZero.Properties)).BeginInit();
@@ -62,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtTo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtFrom.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtFrom.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVariance.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
@@ -74,7 +87,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVariance.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCompany.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbOccupation.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbGrade.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCostCentre.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbDepartment.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbWorkPattern.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPreview
@@ -90,6 +114,7 @@
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.cmbCompany);
             this.layoutControl1.Controls.Add(this.chkZero);
             this.layoutControl1.Controls.Add(this.timeTo);
             this.layoutControl1.Controls.Add(this.timeFrom);
@@ -100,6 +125,11 @@
             this.layoutControl1.Controls.Add(this.btnPreview);
             this.layoutControl1.Controls.Add(this.btnCancel);
             this.layoutControl1.Controls.Add(this.txtVariance);
+            this.layoutControl1.Controls.Add(this.cmbOccupation);
+            this.layoutControl1.Controls.Add(this.cmbGrade);
+            this.layoutControl1.Controls.Add(this.cmbCostCentre);
+            this.layoutControl1.Controls.Add(this.cmbDepartment);
+            this.layoutControl1.Controls.Add(this.cmbWorkPattern);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
@@ -196,6 +226,23 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // txtVariance
+            // 
+            this.txtVariance.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.txtVariance.Location = new System.Drawing.Point(264, 228);
+            this.txtVariance.Name = "txtVariance";
+            this.txtVariance.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtVariance.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtVariance.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.txtVariance.Size = new System.Drawing.Size(268, 20);
+            this.txtVariance.StyleController = this.layoutControl1;
+            this.txtVariance.TabIndex = 12;
+            // 
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.CustomizationFormText = "layoutControlGroup1";
@@ -212,11 +259,16 @@
             this.layoutControlItem7,
             this.layoutControlItem8,
             this.layoutControlItem9,
-            this.layoutControlItem11});
+            this.layoutControlItem11,
+            this.layoutControlItem10,
+            this.layoutControlItem12,
+            this.layoutControlItem13,
+            this.layoutControlItem16,
+            this.layoutControlItem15,
+            this.layoutControlItem14});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(544, 541);
-            this.layoutControlGroup1.Text = "layoutControlGroup1";
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -226,9 +278,7 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 495);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(524, 26);
-            this.layoutControlItem1.Text = "layoutControlItem1";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextToControlDistance = 0;
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -238,19 +288,16 @@
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 469);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(524, 26);
-            this.layoutControlItem2.Text = "layoutControlItem2";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextToControlDistance = 0;
             this.layoutControlItem2.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.CustomizationFormText = "emptySpaceItem1";
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 96);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 240);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(524, 350);
-            this.emptySpaceItem1.Text = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(524, 206);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem3
@@ -320,16 +367,14 @@
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 446);
             this.layoutControlItem9.Name = "layoutControlItem9";
             this.layoutControlItem9.Size = new System.Drawing.Size(524, 23);
-            this.layoutControlItem9.Text = "layoutControlItem9";
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem9.TextToControlDistance = 0;
             this.layoutControlItem9.TextVisible = false;
             // 
             // layoutControlItem11
             // 
             this.layoutControlItem11.Control = this.txtVariance;
             this.layoutControlItem11.CustomizationFormText = "Access Variance In Greater than (minutes):";
-            this.layoutControlItem11.Location = new System.Drawing.Point(0, 72);
+            this.layoutControlItem11.Location = new System.Drawing.Point(0, 216);
             this.layoutControlItem11.Name = "layoutControlItem11";
             this.layoutControlItem11.Size = new System.Drawing.Size(524, 24);
             this.layoutControlItem11.Text = "Access Variance In Greater than x minutes: (0=All) ";
@@ -337,22 +382,125 @@
             this.layoutControlItem11.TextSize = new System.Drawing.Size(247, 13);
             this.layoutControlItem11.TextToControlDistance = 5;
             // 
-            // txtVariance
+            // cmbCompany
             // 
-            this.txtVariance.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.txtVariance.Location = new System.Drawing.Point(264, 84);
-            this.txtVariance.Name = "txtVariance";
-            this.txtVariance.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cmbCompany.Location = new System.Drawing.Point(92, 84);
+            this.cmbCompany.Name = "cmbCompany";
+            this.cmbCompany.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtVariance.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
-            this.txtVariance.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtVariance.Size = new System.Drawing.Size(268, 20);
-            this.txtVariance.StyleController = this.layoutControl1;
-            this.txtVariance.TabIndex = 12;
+            this.cmbCompany.Size = new System.Drawing.Size(440, 20);
+            this.cmbCompany.StyleController = this.layoutControl1;
+            this.cmbCompany.TabIndex = 13;
+            this.cmbCompany.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit1_SelectedIndexChanged);
+            // 
+            // layoutControlItem10
+            // 
+            this.layoutControlItem10.Control = this.cmbCompany;
+            this.layoutControlItem10.Location = new System.Drawing.Point(0, 72);
+            this.layoutControlItem10.Name = "layoutControlItem10";
+            this.layoutControlItem10.Size = new System.Drawing.Size(524, 24);
+            this.layoutControlItem10.Text = "Company:";
+            this.layoutControlItem10.TextSize = new System.Drawing.Size(77, 13);
+            // 
+            // cmbOccupation
+            // 
+            this.cmbOccupation.Location = new System.Drawing.Point(92, 156);
+            this.cmbOccupation.Name = "cmbOccupation";
+            this.cmbOccupation.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbOccupation.Size = new System.Drawing.Size(440, 20);
+            this.cmbOccupation.StyleController = this.layoutControl1;
+            this.cmbOccupation.TabIndex = 13;
+            // 
+            // layoutControlItem12
+            // 
+            this.layoutControlItem12.Control = this.cmbOccupation;
+            this.layoutControlItem12.CustomizationFormText = "layoutControlItem10";
+            this.layoutControlItem12.Location = new System.Drawing.Point(0, 144);
+            this.layoutControlItem12.Name = "layoutControlItem12";
+            this.layoutControlItem12.Size = new System.Drawing.Size(524, 24);
+            this.layoutControlItem12.Text = "Occupation:";
+            this.layoutControlItem12.TextSize = new System.Drawing.Size(77, 13);
+            // 
+            // cmbGrade
+            // 
+            this.cmbGrade.Location = new System.Drawing.Point(92, 180);
+            this.cmbGrade.Name = "cmbGrade";
+            this.cmbGrade.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbGrade.Size = new System.Drawing.Size(440, 20);
+            this.cmbGrade.StyleController = this.layoutControl1;
+            this.cmbGrade.TabIndex = 13;
+            // 
+            // layoutControlItem13
+            // 
+            this.layoutControlItem13.Control = this.cmbGrade;
+            this.layoutControlItem13.CustomizationFormText = "layoutControlItem10";
+            this.layoutControlItem13.Location = new System.Drawing.Point(0, 168);
+            this.layoutControlItem13.Name = "layoutControlItem13";
+            this.layoutControlItem13.Size = new System.Drawing.Size(524, 24);
+            this.layoutControlItem13.Text = "Grade:";
+            this.layoutControlItem13.TextSize = new System.Drawing.Size(77, 13);
+            // 
+            // cmbCostCentre
+            // 
+            this.cmbCostCentre.Location = new System.Drawing.Point(92, 132);
+            this.cmbCostCentre.Name = "cmbCostCentre";
+            this.cmbCostCentre.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbCostCentre.Size = new System.Drawing.Size(440, 20);
+            this.cmbCostCentre.StyleController = this.layoutControl1;
+            this.cmbCostCentre.TabIndex = 13;
+            // 
+            // layoutControlItem14
+            // 
+            this.layoutControlItem14.Control = this.cmbCostCentre;
+            this.layoutControlItem14.CustomizationFormText = "layoutControlItem10";
+            this.layoutControlItem14.Location = new System.Drawing.Point(0, 120);
+            this.layoutControlItem14.Name = "layoutControlItem14";
+            this.layoutControlItem14.Size = new System.Drawing.Size(524, 24);
+            this.layoutControlItem14.Text = "Cost Centre:";
+            this.layoutControlItem14.TextSize = new System.Drawing.Size(77, 13);
+            // 
+            // cmbDepartment
+            // 
+            this.cmbDepartment.Location = new System.Drawing.Point(92, 108);
+            this.cmbDepartment.Name = "cmbDepartment";
+            this.cmbDepartment.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbDepartment.Size = new System.Drawing.Size(440, 20);
+            this.cmbDepartment.StyleController = this.layoutControl1;
+            this.cmbDepartment.TabIndex = 13;
+            // 
+            // layoutControlItem15
+            // 
+            this.layoutControlItem15.Control = this.cmbDepartment;
+            this.layoutControlItem15.CustomizationFormText = "layoutControlItem10";
+            this.layoutControlItem15.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem15.Name = "layoutControlItem15";
+            this.layoutControlItem15.Size = new System.Drawing.Size(524, 24);
+            this.layoutControlItem15.Text = "Department:";
+            this.layoutControlItem15.TextSize = new System.Drawing.Size(77, 13);
+            // 
+            // cmbWorkPattern
+            // 
+            this.cmbWorkPattern.Location = new System.Drawing.Point(92, 204);
+            this.cmbWorkPattern.Name = "cmbWorkPattern";
+            this.cmbWorkPattern.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbWorkPattern.Size = new System.Drawing.Size(440, 20);
+            this.cmbWorkPattern.StyleController = this.layoutControl1;
+            this.cmbWorkPattern.TabIndex = 13;
+            // 
+            // layoutControlItem16
+            // 
+            this.layoutControlItem16.Control = this.cmbWorkPattern;
+            this.layoutControlItem16.CustomizationFormText = "layoutControlItem10";
+            this.layoutControlItem16.Location = new System.Drawing.Point(0, 192);
+            this.layoutControlItem16.Name = "layoutControlItem16";
+            this.layoutControlItem16.Size = new System.Drawing.Size(524, 24);
+            this.layoutControlItem16.Text = "Work Pattern:";
+            this.layoutControlItem16.TextSize = new System.Drawing.Size(77, 13);
             // 
             // frmParameters
             // 
@@ -360,9 +508,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 541);
             this.Controls.Add(this.layoutControl1);
-            this.Name = "frmParameters";
+            this.Name = "FrmParameters";
             this.ShowIcon = false;
             this.Text = "Report Parameters";
+            this.Load += new System.EventHandler(this.frmParameters_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chkZero.Properties)).EndInit();
@@ -374,6 +523,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtTo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtFrom.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtFrom.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVariance.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
@@ -386,7 +536,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVariance.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCompany.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbOccupation.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbGrade.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCostCentre.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbDepartment.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbWorkPattern.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -416,5 +577,17 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
         private DevExpress.XtraEditors.SpinEdit txtVariance;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbCompany;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbOccupation;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbGrade;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbCostCentre;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbDepartment;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbWorkPattern;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
     }
 }
