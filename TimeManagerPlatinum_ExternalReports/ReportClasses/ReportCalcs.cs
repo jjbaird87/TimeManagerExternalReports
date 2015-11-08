@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DevExpress.DataAccess.Native.DB;
 using FirebirdSql.Data.FirebirdClient;
 using DataTable = System.Data.DataTable;
 
@@ -128,10 +125,9 @@ namespace TimeManagerPlatinum_ExternalReports.ReportClasses
                 var dr = GetFirstAndLastClocking(calcRow.EmpNo, calcRow.Date);
                 if (dr != null)
                 {
-                    calcRow.InTime = dr[0] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(dr[0]);
-                    calcRow.OutTime = dr[1] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(dr[1]);                    
+                    calcRow.InTime = dr[1] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(dr[1]);
+                    calcRow.OutTime = dr[0] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(dr[0]);                    
                 }
-                calcRow.SubtractLostTimeFromOverTime();
                 report.Add(calcRow);
             }
 

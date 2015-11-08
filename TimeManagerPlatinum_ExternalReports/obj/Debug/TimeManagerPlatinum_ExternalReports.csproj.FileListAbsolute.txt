@@ -189,3 +189,4 @@ E:\Github Sources\TimeManagerExternalReports\TimeManagerPlatinum_ExternalReports
 E:\Github Sources\TimeManagerExternalReports\TimeManagerPlatinum_ExternalReports\bin\Debug\ja\DevExpress.XtraWizard.v14.2.resources.dll
 E:\Github Sources\TimeManagerExternalReports\TimeManagerPlatinum_ExternalReports\bin\Debug\ru\DevExpress.XtraWizard.v14.2.resources.dll
 E:\Github Sources\TimeManagerExternalReports\TimeManagerPlatinum_ExternalReports\obj\Debug\TimeManagerPlatinum_ExternalReports.Reports.reportOTLessLost.resources
+E:\Github Sources\TimeManagerExternalReports\TimeManagerPlatinum_ExternalReports\obj\Debug\TimeManagerPlatinum_ExternalReports.WaitForm.FrmLoading.resources

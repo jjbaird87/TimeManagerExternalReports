@@ -30,12 +30,6 @@ namespace TimeManagerPlatinum_ExternalReports.ReportClasses
         [DisplayName(@"1.5")]
         public int OverTime { get; set; }
 
-        [DisplayName(@"Balanced 1.5")]
-        public int BalancedOverTime { get; set; }
-
-        [DisplayName(@"1.5 Difference")]
-        public int OverTimeDifference => OverTime - BalancedOverTime;
-
         [DisplayName(@"2.0")]
         public int DoubleTime { get; set; }
 
@@ -49,18 +43,6 @@ namespace TimeManagerPlatinum_ExternalReports.ReportClasses
         public int LostTime { get; set; }
 
         [DisplayName(@"Total")]
-        public int TotalTime => NormalTime + BalancedOverTime + DoubleTime + NotApplicable + Pphw;
-
-        public void SubtractLostTimeFromOverTime()
-        {
-            BalancedOverTime = OverTime;
-
-            if (LostTime <= 0) return;
-            if (BalancedOverTime <= 0) return;
-
-            BalancedOverTime = OverTime - LostTime;
-            if (BalancedOverTime < 0)
-                BalancedOverTime = 0;
-        }
+        public int TotalTime => NormalTime + OverTime + DoubleTime + NotApplicable + Pphw;
     }
 }

@@ -1,16 +1,11 @@
 ﻿using System;
-using System.Drawing;
-using System.Collections;
-using System.ComponentModel;
-using System.Data;
 using DevExpress.XtraReports.UI;
-using TimeManagerPlatinum_ExternalReports.ReportClasses;
 
 namespace TimeManagerPlatinum_ExternalReports.Reports
 {
-    public partial class reportOTLessLost : DevExpress.XtraReports.UI.XtraReport
+    public partial class ReportOtLessLost : XtraReport
     {
-        public reportOTLessLost()
+        public ReportOtLessLost()
         {
             InitializeComponent();
         }
@@ -29,7 +24,7 @@ namespace TimeManagerPlatinum_ExternalReports.Reports
 
         private void xrLabel20_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
         {
-            xrLabel20.Text = FormatToHhmm(Convert.ToInt32(GetCurrentColumnValue("BalancedOverTime")));
+            xrLabel20.Text = FormatToHhmm(Convert.ToInt32(GetCurrentColumnValue("OverTime")));
         }
 
         private void xrLabel21_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
@@ -69,7 +64,10 @@ namespace TimeManagerPlatinum_ExternalReports.Reports
 
         private void xrLabel29_SummaryCalculated(object sender, TextFormatEventArgs e)
         {
-            e.Text = FormatToHhmm(Convert.ToInt32(e.Value));
+            var overtime = Convert.ToInt32(lblOvertimeSummary.Summary.GetResult());
+            var losttime = Convert.ToInt32(lblLostTimeSummary.Summary.GetResult());
+            
+            e.Text = FormatToHhmm(SubtractLostTimeFromOverTime(overtime, losttime));
         }
 
         private void xrLabel30_SummaryCalculated(object sender, TextFormatEventArgs e)
@@ -97,44 +95,61 @@ namespace TimeManagerPlatinum_ExternalReports.Reports
             e.Text = FormatToHhmm(Convert.ToInt32(e.Value));
         }
 
-        private void xrLabel45_SummaryCalculated(object sender, TextFormatEventArgs e)
-        {
-            e.Text = FormatToHhmm(Convert.ToInt32(e.Value));
-        }
-
-        private void xrLabel46_SummaryCalculated(object sender, TextFormatEventArgs e)
-        {
-            e.Text = FormatToHhmm(Convert.ToInt32(e.Value));
-        }
-
-        private void xrLabel47_SummaryCalculated(object sender, TextFormatEventArgs e)
-        {
-            e.Text = FormatToHhmm(Convert.ToInt32(e.Value));
-        }
-
-        private void xrLabel48_SummaryCalculated(object sender, TextFormatEventArgs e)
-        {
-            e.Text = FormatToHhmm(Convert.ToInt32(e.Value));
-        }
-
-        private void xrLabel49_SummaryCalculated(object sender, TextFormatEventArgs e)
-        {
-            e.Text = FormatToHhmm(Convert.ToInt32(e.Value));
-        }
-
-        private void xrLabel50_SummaryCalculated(object sender, TextFormatEventArgs e)
-        {
-            e.Text = FormatToHhmm(Convert.ToInt32(e.Value));
-        }
-
-        private void xrLabel3_SummaryCalculated(object sender, TextFormatEventArgs e)
-        {
-            e.Text = FormatToHhmm(Convert.ToInt32(e.Value));
-        }
-
         private void xrLabel15_SummaryCalculated(object sender, TextFormatEventArgs e)
-        {
+        {        
             e.Text = FormatToHhmm(Convert.ToInt32(e.Value));
+        }
+
+        private int SubtractLostTimeFromOverTime(int overTime, int lostTime)
+        {
+            var balancedOverTime = overTime;
+
+            if (lostTime <= 0) return balancedOverTime;
+            if (balancedOverTime <= 0) return balancedOverTime;
+
+            balancedOverTime = overTime - lostTime;
+            if (balancedOverTime < 0)
+                balancedOverTime = 0;
+
+            return balancedOverTime;
+        }
+
+        private int AddLostTimeToNormalTime(int normalTime, int overTime, int lostTime)
+        {
+            var balancedOverTime = SubtractLostTimeFromOverTime(overTime, lostTime);
+            var overTimeUsed = overTime - balancedOverTime;
+            var balancedNormalTime = normalTime + overTimeUsed;
+            return balancedNormalTime;
+        }
+
+        //private int SubtractLostTimeFromOverTimeAndNormalTime(int normalTime, int overTime, int lostTime)
+        //{
+        //    var balancedOverTime = overTime;
+        //    var balancedNormalTime = normalTime;
+        //    var balancedLostTime = 0;
+
+        //    if (lostTime <= 0) return balancedNormalTime;
+        //    if (balancedNormalTime <= 0) return balancedNormalTime;
+
+        //    balancedOverTime = overTime - lostTime;
+        //    if (balancedOverTime < 0)
+        //        balancedOverTime = 0;
+        //    balancedLostTime = lostTime - (overTime - balancedOverTime);
+
+        //    balancedNormalTime = normalTime - balancedLostTime;
+        //    if (balancedNormalTime < 0)
+        //        balancedNormalTime = 0;            
+
+        //    return balancedNormalTime;
+        //}
+
+        private void lblBalancedNormalTime_SummaryCalculated(object sender, TextFormatEventArgs e)
+        {
+            var normalTime = Convert.ToInt32(lblBalancedNormalTime.Summary.GetResult());
+            var overtime = Convert.ToInt32(lblOverTimeSummary1.Summary.GetResult());
+            var losttime = Convert.ToInt32(lblLostTimeSummary.Summary.GetResult());
+
+            e.Text = FormatToHhmm(AddLostTimeToNormalTime(normalTime, overtime, losttime));
         }
     }
 }

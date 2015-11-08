@@ -6,10 +6,12 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraNavBar;
+using DevExpress.XtraSplashScreen;
 using FirebirdSql.Data.FirebirdClient;
 using TimeManagerPlatinum_ExternalReports.Properties;
 using TimeManagerPlatinum_ExternalReports.ReportClasses;
 using TimeManagerPlatinum_ExternalReports.Reports;
+using TimeManagerPlatinum_ExternalReports.WaitForm;
 
 namespace TimeManagerPlatinum_ExternalReports
 {
@@ -43,7 +45,7 @@ namespace TimeManagerPlatinum_ExternalReports
             XtraMessageBox.Show("Database path saved successfully");
         }
 
-        private bool ConnectToDb(string dbPath)
+        private static bool ConnectToDb(string dbPath)
         {
             string conn = Utilities.BuildConnectionString(dbPath);
 
@@ -135,7 +137,7 @@ namespace TimeManagerPlatinum_ExternalReports
             grdReport.DataSource = lstWastedTime;
         }                
 
-        private void ProcessAccessIn(ref WastedTime line, ref List<WastedTime> lstWastedTime, CurrentInfo info)
+        private static void ProcessAccessIn(ref WastedTime line, ref List<WastedTime> lstWastedTime, CurrentInfo info)
         {
             if (line.In != null || line.Out != null)
             {
@@ -153,7 +155,7 @@ namespace TimeManagerPlatinum_ExternalReports
             line.Processed = true;
         }
 
-        private void ProcessClockIn(ref WastedTime line, ref List<WastedTime> lstWastedTime, CurrentInfo info)
+        private static void ProcessClockIn(ref WastedTime line, ref List<WastedTime> lstWastedTime, CurrentInfo info)
         {
             if (line.In != null || line.Out != null)
             {
@@ -171,7 +173,7 @@ namespace TimeManagerPlatinum_ExternalReports
             line.Processed = true;
         }
 
-        private void ProcessClockOut(ref WastedTime line, ref List<WastedTime> lstWastedTime, CurrentInfo info)
+        private static void ProcessClockOut(ref WastedTime line, ref List<WastedTime> lstWastedTime, CurrentInfo info)
         {
             if (line.In != null && line.Out == null && !line.AccessClocking)
             {
@@ -202,7 +204,7 @@ namespace TimeManagerPlatinum_ExternalReports
             }
         }
 
-        private void ProcessAccessOut(ref WastedTime line, ref List<WastedTime> lstWastedTime, CurrentInfo info)
+        private static void ProcessAccessOut(ref WastedTime line, ref List<WastedTime> lstWastedTime, CurrentInfo info)
         {
             if (line.In != null && line.Out == null && line.AccessClocking && line.Processed)
             {
@@ -233,7 +235,7 @@ namespace TimeManagerPlatinum_ExternalReports
             }
         }
 
-        private void PostProcessing(ref List<WastedTime> lstWastedTime, Parameters reportParams)
+        private static void PostProcessing(ref List<WastedTime> lstWastedTime, Parameters reportParams)
         {
             var info = new CurrentInfo
             {
@@ -444,21 +446,34 @@ namespace TimeManagerPlatinum_ExternalReports
 
         private void overtimeLessLost_LinkClicked(object sender, NavBarLinkEventArgs e)
         {
-            var parameters = new FrmParameters();
-            parameters.ShowDialog();
+            try
+            {
+                var parameters = new FrmParameters();
+                parameters.ShowDialog();
 
-            var reportParams = parameters.GetParameters();
-            if (reportParams == null)
-                return;
+                var reportParams = parameters.GetParameters();
+                if (reportParams == null)
+                    return;
 
-            //GetDataForWastedTimeReport(reportParams);
-            var reportData = ReportCalcs.GetOverTimeLessLostTime(reportParams);
-            grdReport.DataSource = reportData;
+                SplashScreenManager.ShowForm(this, typeof(FrmLoading), true, true);
 
-            //Load Report
-            var report = new reportOTLessLost { DataSource = reportData };
-            documentViewer1.PrintingSystem = report.PrintingSystem;
-            report.CreateDocument();
+                //GetDataForWastedTimeReport(reportParams);
+                var reportData = ReportCalcs.GetOverTimeLessLostTime(reportParams);
+                grdReport.DataSource = reportData;
+
+                //Load Report
+                var report = new ReportOtLessLost {DataSource = reportData};
+                documentViewer1.PrintingSystem = report.PrintingSystem;
+                report.CreateDocument();
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                SplashScreenManager.CloseForm(false);
+            }
         }
     }
 }

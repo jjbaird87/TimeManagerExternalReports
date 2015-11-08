@@ -1,6 +1,6 @@
 ﻿namespace TimeManagerPlatinum_ExternalReports.Reports
 {
-    partial class reportOTLessLost
+    partial class ReportOtLessLost
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary4 = new DevExpress.XtraReports.UI.XRSummary();
@@ -37,12 +36,7 @@
             DevExpress.XtraReports.UI.XRSummary xrSummary7 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary8 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary9 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary10 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary11 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary12 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary13 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary14 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary15 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.xrLabel19 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
@@ -57,6 +51,8 @@
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.groupHeaderBand1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.xrLabel28 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel36 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel52 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel53 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
@@ -81,32 +77,22 @@
             this.xrLabel27 = new DevExpress.XtraReports.UI.XRLabel();
             this.groupFooterBand1 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.groupFooterBand2 = new DevExpress.XtraReports.UI.GroupFooterBand();
-            this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLine3 = new DevExpress.XtraReports.UI.XRLine();
+            this.lblOverTimeSummary1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel26 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel29 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblOvertimeSummary = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel30 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel31 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel32 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel33 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblLostTimeSummary = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel34 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel35 = new DevExpress.XtraReports.UI.XRLabel();
-            this.reportFooterBand1 = new DevExpress.XtraReports.UI.ReportFooterBand();
-            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel45 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel46 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel47 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel48 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel49 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel50 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel51 = new DevExpress.XtraReports.UI.XRLabel();
             this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
             this.FieldCaption = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
             this.DataField = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.xrLine3 = new DevExpress.XtraReports.UI.XRLine();
-            this.xrLabel28 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel36 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lblBalancedNormalTime = new DevExpress.XtraReports.UI.XRLabel();
             this.objectDataSource2 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource();
             this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource2)).BeginInit();
@@ -136,10 +122,10 @@
             // 
             this.xrLabel19.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "NormalTime")});
-            this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(238.5849F, 0F);
+            this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(228.1682F, 0F);
             this.xrLabel19.Name = "xrLabel19";
             this.xrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel19.SizeF = new System.Drawing.SizeF(57.91635F, 17F);
+            this.xrLabel19.SizeF = new System.Drawing.SizeF(68.33302F, 17F);
             this.xrLabel19.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.xrLabel19_BeforePrint);
             // 
             // xrLabel16
@@ -169,8 +155,8 @@
             // xrLabel20
             // 
             this.xrLabel20.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "BalancedOverTime")});
-            this.xrLabel20.LocationFloat = new DevExpress.Utils.PointFloat(296.5013F, 0F);
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "OverTime")});
+            this.xrLabel20.LocationFloat = new DevExpress.Utils.PointFloat(296.5014F, 0F);
             this.xrLabel20.Name = "xrLabel20";
             this.xrLabel20.SizeF = new System.Drawing.SizeF(57.9165F, 17F);
             this.xrLabel20.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.xrLabel20_BeforePrint);
@@ -249,12 +235,33 @@
             this.groupHeaderBand1.Level = 2;
             this.groupHeaderBand1.Name = "groupHeaderBand1";
             // 
+            // xrLabel28
+            // 
+            this.xrLabel28.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "WorkPattern")});
+            this.xrLabel28.LocationFloat = new DevExpress.Utils.PointFloat(95.54167F, 36F);
+            this.xrLabel28.Name = "xrLabel28";
+            this.xrLabel28.SizeF = new System.Drawing.SizeF(164.2855F, 36F);
+            this.xrLabel28.StyleName = "DataField";
+            // 
+            // xrLabel36
+            // 
+            this.xrLabel36.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel36.LocationFloat = new DevExpress.Utils.PointFloat(5.999994F, 36F);
+            this.xrLabel36.Name = "xrLabel36";
+            this.xrLabel36.SizeF = new System.Drawing.SizeF(89.54169F, 36F);
+            this.xrLabel36.StyleName = "FieldCaption";
+            this.xrLabel36.StylePriority.UseFont = false;
+            this.xrLabel36.Text = "Work Pattern:";
+            // 
             // xrLabel52
             // 
+            this.xrLabel52.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel52.LocationFloat = new DevExpress.Utils.PointFloat(155.0833F, 0F);
             this.xrLabel52.Name = "xrLabel52";
             this.xrLabel52.SizeF = new System.Drawing.SizeF(47F, 36F);
             this.xrLabel52.StyleName = "FieldCaption";
+            this.xrLabel52.StylePriority.UseFont = false;
             this.xrLabel52.Text = "Name:";
             // 
             // xrLabel53
@@ -277,10 +284,12 @@
             // 
             // xrLabel1
             // 
+            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(6F, 0F);
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.SizeF = new System.Drawing.SizeF(47F, 36F);
             this.xrLabel1.StyleName = "FieldCaption";
+            this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.Text = "Emp No";
             // 
             // groupHeaderBand3
@@ -325,9 +334,9 @@
             // 
             // xrLabel8
             // 
-            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(238.5849F, 7.000001F);
+            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(228.1682F, 7.000001F);
             this.xrLabel8.Name = "xrLabel8";
-            this.xrLabel8.SizeF = new System.Drawing.SizeF(57.91638F, 18F);
+            this.xrLabel8.SizeF = new System.Drawing.SizeF(68.33305F, 18F);
             this.xrLabel8.Text = "NT";
             // 
             // xrLabel9
@@ -432,34 +441,41 @@
             // groupFooterBand2
             // 
             this.groupFooterBand2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.lblBalancedNormalTime,
             this.xrLine3,
-            this.xrLabel15,
+            this.lblOverTimeSummary1,
             this.xrLabel4,
             this.xrLabel26,
-            this.xrLabel29,
+            this.lblOvertimeSummary,
             this.xrLabel30,
             this.xrLabel31,
             this.xrLabel32,
-            this.xrLabel33,
+            this.lblLostTimeSummary,
             this.xrLabel34,
             this.xrLabel35});
             this.groupFooterBand2.HeightF = 64.37505F;
             this.groupFooterBand2.Level = 1;
             this.groupFooterBand2.Name = "groupFooterBand2";
             // 
-            // xrLabel15
+            // xrLine3
             // 
-            this.xrLabel15.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "OverTimeDifference", "{0:C2}")});
-            this.xrLabel15.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(296.5013F, 37.00002F);
-            this.xrLabel15.Name = "xrLabel15";
-            this.xrLabel15.SizeF = new System.Drawing.SizeF(57.91643F, 18F);
-            this.xrLabel15.StyleName = "FieldCaption";
-            this.xrLabel15.StylePriority.UseFont = false;
-            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrLabel15.Summary = xrSummary1;
-            this.xrLabel15.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel15_SummaryCalculated);
+            this.xrLine3.LocationFloat = new DevExpress.Utils.PointFloat(2F, 55.00002F);
+            this.xrLine3.Name = "xrLine3";
+            this.xrLine3.SizeF = new System.Drawing.SizeF(638F, 2F);
+            // 
+            // lblOverTimeSummary1
+            // 
+            this.lblOverTimeSummary1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "OverTime", "{0:C2}")});
+            this.lblOverTimeSummary1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.lblOverTimeSummary1.LocationFloat = new DevExpress.Utils.PointFloat(296.5014F, 6.00001F);
+            this.lblOverTimeSummary1.Name = "lblOverTimeSummary1";
+            this.lblOverTimeSummary1.SizeF = new System.Drawing.SizeF(57.91643F, 18F);
+            this.lblOverTimeSummary1.StyleName = "FieldCaption";
+            this.lblOverTimeSummary1.StylePriority.UseFont = false;
+            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.lblOverTimeSummary1.Summary = xrSummary2;
+            this.lblOverTimeSummary1.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel15_SummaryCalculated);
             // 
             // xrLabel4
             // 
@@ -477,29 +493,29 @@
             this.xrLabel26.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "NormalTime", "{0:C2}")});
             this.xrLabel26.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel26.LocationFloat = new DevExpress.Utils.PointFloat(238.5849F, 6.00001F);
+            this.xrLabel26.LocationFloat = new DevExpress.Utils.PointFloat(228.1682F, 6.00001F);
             this.xrLabel26.Name = "xrLabel26";
-            this.xrLabel26.SizeF = new System.Drawing.SizeF(57.91643F, 18F);
+            this.xrLabel26.SizeF = new System.Drawing.SizeF(68.33311F, 18F);
             this.xrLabel26.StyleName = "FieldCaption";
             this.xrLabel26.StylePriority.UseFont = false;
-            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrLabel26.Summary = xrSummary2;
+            xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrLabel26.Summary = xrSummary3;
             this.xrLabel26.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel26_SummaryCalculated);
             this.xrLabel26.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.xrLabel26_BeforePrint);
             // 
-            // xrLabel29
+            // lblOvertimeSummary
             // 
-            this.xrLabel29.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "BalancedOverTime", "{0:C2}")});
-            this.xrLabel29.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel29.LocationFloat = new DevExpress.Utils.PointFloat(296.5014F, 6.00001F);
-            this.xrLabel29.Name = "xrLabel29";
-            this.xrLabel29.SizeF = new System.Drawing.SizeF(57.91643F, 18F);
-            this.xrLabel29.StyleName = "FieldCaption";
-            this.xrLabel29.StylePriority.UseFont = false;
-            xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrLabel29.Summary = xrSummary3;
-            this.xrLabel29.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel29_SummaryCalculated);
+            this.lblOvertimeSummary.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "OverTime", "{0:C2}")});
+            this.lblOvertimeSummary.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.lblOvertimeSummary.LocationFloat = new DevExpress.Utils.PointFloat(296.5014F, 36.37505F);
+            this.lblOvertimeSummary.Name = "lblOvertimeSummary";
+            this.lblOvertimeSummary.SizeF = new System.Drawing.SizeF(57.91643F, 18F);
+            this.lblOvertimeSummary.StyleName = "FieldCaption";
+            this.lblOvertimeSummary.StylePriority.UseFont = false;
+            xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.lblOvertimeSummary.Summary = xrSummary4;
+            this.lblOvertimeSummary.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel29_SummaryCalculated);
             // 
             // xrLabel30
             // 
@@ -511,8 +527,8 @@
             this.xrLabel30.SizeF = new System.Drawing.SizeF(57.91643F, 18F);
             this.xrLabel30.StyleName = "FieldCaption";
             this.xrLabel30.StylePriority.UseFont = false;
-            xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrLabel30.Summary = xrSummary4;
+            xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrLabel30.Summary = xrSummary5;
             this.xrLabel30.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel30_SummaryCalculated);
             // 
             // xrLabel31
@@ -525,8 +541,8 @@
             this.xrLabel31.SizeF = new System.Drawing.SizeF(57.91643F, 18F);
             this.xrLabel31.StyleName = "FieldCaption";
             this.xrLabel31.StylePriority.UseFont = false;
-            xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrLabel31.Summary = xrSummary5;
+            xrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrLabel31.Summary = xrSummary6;
             this.xrLabel31.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel31_SummaryCalculated);
             // 
             // xrLabel32
@@ -539,23 +555,23 @@
             this.xrLabel32.SizeF = new System.Drawing.SizeF(57.91643F, 18F);
             this.xrLabel32.StyleName = "FieldCaption";
             this.xrLabel32.StylePriority.UseFont = false;
-            xrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrLabel32.Summary = xrSummary6;
+            xrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrLabel32.Summary = xrSummary7;
             this.xrLabel32.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel32_SummaryCalculated);
             // 
-            // xrLabel33
+            // lblLostTimeSummary
             // 
-            this.xrLabel33.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+            this.lblLostTimeSummary.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "LostTime", "{0:C2}")});
-            this.xrLabel33.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel33.LocationFloat = new DevExpress.Utils.PointFloat(528.7637F, 6.00001F);
-            this.xrLabel33.Name = "xrLabel33";
-            this.xrLabel33.SizeF = new System.Drawing.SizeF(53.31989F, 18F);
-            this.xrLabel33.StyleName = "FieldCaption";
-            this.xrLabel33.StylePriority.UseFont = false;
-            xrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrLabel33.Summary = xrSummary7;
-            this.xrLabel33.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel33_SummaryCalculated);
+            this.lblLostTimeSummary.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.lblLostTimeSummary.LocationFloat = new DevExpress.Utils.PointFloat(528.7637F, 6.00001F);
+            this.lblLostTimeSummary.Name = "lblLostTimeSummary";
+            this.lblLostTimeSummary.SizeF = new System.Drawing.SizeF(53.31989F, 18F);
+            this.lblLostTimeSummary.StyleName = "FieldCaption";
+            this.lblLostTimeSummary.StylePriority.UseFont = false;
+            xrSummary8.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.lblLostTimeSummary.Summary = xrSummary8;
+            this.lblLostTimeSummary.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel33_SummaryCalculated);
             // 
             // xrLabel34
             // 
@@ -567,8 +583,8 @@
             this.xrLabel34.SizeF = new System.Drawing.SizeF(57.91643F, 18F);
             this.xrLabel34.StyleName = "FieldCaption";
             this.xrLabel34.StylePriority.UseFont = false;
-            xrSummary8.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrLabel34.Summary = xrSummary8;
+            xrSummary9.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrLabel34.Summary = xrSummary9;
             this.xrLabel34.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel34_SummaryCalculated);
             // 
             // xrLabel35
@@ -580,128 +596,6 @@
             this.xrLabel35.StyleName = "FieldCaption";
             this.xrLabel35.StylePriority.UseFont = false;
             this.xrLabel35.Text = "Totals:";
-            // 
-            // reportFooterBand1
-            // 
-            this.reportFooterBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel3,
-            this.xrLabel45,
-            this.xrLabel46,
-            this.xrLabel47,
-            this.xrLabel48,
-            this.xrLabel49,
-            this.xrLabel50,
-            this.xrLabel51});
-            this.reportFooterBand1.HeightF = 30F;
-            this.reportFooterBand1.Name = "reportFooterBand1";
-            // 
-            // xrLabel3
-            // 
-            this.xrLabel3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "NormalTime", "{0:C2}")});
-            this.xrLabel3.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(238.5849F, 6.00001F);
-            this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(57.91644F, 18F);
-            this.xrLabel3.StyleName = "FieldCaption";
-            this.xrLabel3.StylePriority.UseFont = false;
-            xrSummary9.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrLabel3.Summary = xrSummary9;
-            this.xrLabel3.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel3_SummaryCalculated);
-            // 
-            // xrLabel45
-            // 
-            this.xrLabel45.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "BalancedOverTime", "{0:C2}")});
-            this.xrLabel45.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.xrLabel45.LocationFloat = new DevExpress.Utils.PointFloat(296.5013F, 6.00001F);
-            this.xrLabel45.Name = "xrLabel45";
-            this.xrLabel45.SizeF = new System.Drawing.SizeF(57.91644F, 18F);
-            this.xrLabel45.StyleName = "FieldCaption";
-            this.xrLabel45.StylePriority.UseFont = false;
-            xrSummary10.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrLabel45.Summary = xrSummary10;
-            this.xrLabel45.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel45_SummaryCalculated);
-            // 
-            // xrLabel46
-            // 
-            this.xrLabel46.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "DoubleTime", "{0:C2}")});
-            this.xrLabel46.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(354.4178F, 6.00001F);
-            this.xrLabel46.Name = "xrLabel46";
-            this.xrLabel46.SizeF = new System.Drawing.SizeF(57.91656F, 18F);
-            this.xrLabel46.StyleName = "FieldCaption";
-            this.xrLabel46.StylePriority.UseFont = false;
-            xrSummary11.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrLabel46.Summary = xrSummary11;
-            this.xrLabel46.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel46_SummaryCalculated);
-            // 
-            // xrLabel47
-            // 
-            this.xrLabel47.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Pphw", "{0:C2}")});
-            this.xrLabel47.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.xrLabel47.LocationFloat = new DevExpress.Utils.PointFloat(412.3343F, 6.00001F);
-            this.xrLabel47.Name = "xrLabel47";
-            this.xrLabel47.SizeF = new System.Drawing.SizeF(57.91632F, 18F);
-            this.xrLabel47.StyleName = "FieldCaption";
-            this.xrLabel47.StylePriority.UseFont = false;
-            xrSummary12.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrLabel47.Summary = xrSummary12;
-            this.xrLabel47.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel47_SummaryCalculated);
-            // 
-            // xrLabel48
-            // 
-            this.xrLabel48.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "NotApplicable", "{0:C2}")});
-            this.xrLabel48.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.xrLabel48.LocationFloat = new DevExpress.Utils.PointFloat(470.2506F, 6.00001F);
-            this.xrLabel48.Name = "xrLabel48";
-            this.xrLabel48.SizeF = new System.Drawing.SizeF(57.91647F, 18F);
-            this.xrLabel48.StyleName = "FieldCaption";
-            this.xrLabel48.StylePriority.UseFont = false;
-            xrSummary13.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrLabel48.Summary = xrSummary13;
-            this.xrLabel48.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel48_SummaryCalculated);
-            // 
-            // xrLabel49
-            // 
-            this.xrLabel49.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "LostTime", "{0:C2}")});
-            this.xrLabel49.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.xrLabel49.LocationFloat = new DevExpress.Utils.PointFloat(528.7635F, 6.00001F);
-            this.xrLabel49.Name = "xrLabel49";
-            this.xrLabel49.SizeF = new System.Drawing.SizeF(53.31989F, 18F);
-            this.xrLabel49.StyleName = "FieldCaption";
-            this.xrLabel49.StylePriority.UseFont = false;
-            xrSummary14.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrLabel49.Summary = xrSummary14;
-            this.xrLabel49.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel49_SummaryCalculated);
-            // 
-            // xrLabel50
-            // 
-            this.xrLabel50.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "TotalTime", "{0:C2}")});
-            this.xrLabel50.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.xrLabel50.LocationFloat = new DevExpress.Utils.PointFloat(582.0836F, 6.00001F);
-            this.xrLabel50.Name = "xrLabel50";
-            this.xrLabel50.SizeF = new System.Drawing.SizeF(57.91643F, 18F);
-            this.xrLabel50.StyleName = "FieldCaption";
-            this.xrLabel50.StylePriority.UseFont = false;
-            xrSummary15.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrLabel50.Summary = xrSummary15;
-            this.xrLabel50.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.xrLabel50_SummaryCalculated);
-            // 
-            // xrLabel51
-            // 
-            this.xrLabel51.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.xrLabel51.LocationFloat = new DevExpress.Utils.PointFloat(6.00001F, 6.00001F);
-            this.xrLabel51.Name = "xrLabel51";
-            this.xrLabel51.SizeF = new System.Drawing.SizeF(115.8328F, 18F);
-            this.xrLabel51.StyleName = "FieldCaption";
-            this.xrLabel51.StylePriority.UseFont = false;
-            this.xrLabel51.Text = "Grand Total:";
             // 
             // Title
             // 
@@ -744,28 +638,19 @@
             this.DataField.Name = "DataField";
             this.DataField.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             // 
-            // xrLine3
+            // lblBalancedNormalTime
             // 
-            this.xrLine3.LocationFloat = new DevExpress.Utils.PointFloat(2F, 55.00002F);
-            this.xrLine3.Name = "xrLine3";
-            this.xrLine3.SizeF = new System.Drawing.SizeF(638F, 2F);
-            // 
-            // xrLabel28
-            // 
-            this.xrLabel28.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "WorkPattern")});
-            this.xrLabel28.LocationFloat = new DevExpress.Utils.PointFloat(95.54167F, 36F);
-            this.xrLabel28.Name = "xrLabel28";
-            this.xrLabel28.SizeF = new System.Drawing.SizeF(164.2855F, 36F);
-            this.xrLabel28.StyleName = "DataField";
-            // 
-            // xrLabel36
-            // 
-            this.xrLabel36.LocationFloat = new DevExpress.Utils.PointFloat(5.999994F, 36F);
-            this.xrLabel36.Name = "xrLabel36";
-            this.xrLabel36.SizeF = new System.Drawing.SizeF(89.54169F, 36F);
-            this.xrLabel36.StyleName = "FieldCaption";
-            this.xrLabel36.Text = "Work Pattern:";
+            this.lblBalancedNormalTime.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "NormalTime", "{0:C2}")});
+            this.lblBalancedNormalTime.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.lblBalancedNormalTime.LocationFloat = new DevExpress.Utils.PointFloat(228.1682F, 36.37505F);
+            this.lblBalancedNormalTime.Name = "lblBalancedNormalTime";
+            this.lblBalancedNormalTime.SizeF = new System.Drawing.SizeF(68.33302F, 18F);
+            this.lblBalancedNormalTime.StyleName = "FieldCaption";
+            this.lblBalancedNormalTime.StylePriority.UseFont = false;
+            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.lblBalancedNormalTime.Summary = xrSummary1;
+            this.lblBalancedNormalTime.SummaryCalculated += new DevExpress.XtraReports.UI.TextFormatEventHandler(this.lblBalancedNormalTime_SummaryCalculated);
             // 
             // objectDataSource2
             // 
@@ -777,7 +662,7 @@
             this.objectDataSource1.DataSource = typeof(TimeManagerPlatinum_ExternalReports.ReportClasses.OverTimeLessLostTime);
             this.objectDataSource1.Name = "objectDataSource1";
             // 
-            // reportOTLessLost
+            // ReportOtLessLost
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.Detail,
@@ -787,8 +672,7 @@
             this.groupHeaderBand3,
             this.pageFooterBand1,
             this.reportHeaderBand1,
-            this.groupFooterBand2,
-            this.reportFooterBand1});
+            this.groupFooterBand2});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.objectDataSource2,
             this.objectDataSource1});
@@ -843,21 +727,13 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel27;
         private DevExpress.XtraReports.UI.GroupFooterBand groupFooterBand1;
         private DevExpress.XtraReports.UI.GroupFooterBand groupFooterBand2;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel29;
+        private DevExpress.XtraReports.UI.XRLabel lblOvertimeSummary;
         private DevExpress.XtraReports.UI.XRLabel xrLabel30;
         private DevExpress.XtraReports.UI.XRLabel xrLabel31;
         private DevExpress.XtraReports.UI.XRLabel xrLabel32;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel33;
+        private DevExpress.XtraReports.UI.XRLabel lblLostTimeSummary;
         private DevExpress.XtraReports.UI.XRLabel xrLabel34;
         private DevExpress.XtraReports.UI.XRLabel xrLabel35;
-        private DevExpress.XtraReports.UI.ReportFooterBand reportFooterBand1;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel45;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel46;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel47;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel48;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel49;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel50;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel51;
         private DevExpress.XtraReports.UI.XRControlStyle Title;
         private DevExpress.XtraReports.UI.XRControlStyle FieldCaption;
         private DevExpress.XtraReports.UI.XRControlStyle PageInfo;
@@ -867,11 +743,11 @@
         private DevExpress.DataAccess.ObjectBinding.ObjectDataSource objectDataSource2;
         private DevExpress.XtraReports.UI.XRLabel xrLabel19;
         private DevExpress.XtraReports.UI.XRLabel xrLabel26;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel15;
+        private DevExpress.XtraReports.UI.XRLabel lblOverTimeSummary1;
         private DevExpress.XtraReports.UI.XRLabel xrLabel4;
         private DevExpress.XtraReports.UI.XRLine xrLine3;
         private DevExpress.XtraReports.UI.XRLabel xrLabel28;
         private DevExpress.XtraReports.UI.XRLabel xrLabel36;
+        private DevExpress.XtraReports.UI.XRLabel lblBalancedNormalTime;
     }
 }

@@ -142,6 +142,12 @@
       <DependentUpon>reportOTLessLost.cs</DependentUpon>
     </Compile>
     <Compile Include="Utilities.cs" />
+    <Compile Include="WaitForm\frmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm\frmLoading.designer.cs">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmReports.resx">
       <DependentUpon>frmReports.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +167,9 @@
     </Compile>
     <EmbeddedResource Include="Reports\reportOTLessLost.resx">
       <DependentUpon>reportOTLessLost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm\frmLoading.resx">
+      <DependentUpon>frmLoading.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">

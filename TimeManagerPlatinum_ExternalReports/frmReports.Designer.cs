@@ -155,7 +155,7 @@
             this.splitContainerControl.Panel1.Text = "Panel1";
             this.splitContainerControl.Panel2.Controls.Add(this.xtraTabControl1);
             this.splitContainerControl.Panel2.Text = "Panel2";
-            this.splitContainerControl.Size = new System.Drawing.Size(1027, 447);
+            this.splitContainerControl.Size = new System.Drawing.Size(1166, 718);
             this.splitContainerControl.SplitterPosition = 198;
             this.splitContainerControl.TabIndex = 0;
             this.splitContainerControl.Text = "splitContainerControl1";
@@ -179,7 +179,7 @@
             this.navBarControl.Name = "navBarControl";
             this.navBarControl.OptionsNavPane.ExpandedWidth = 198;
             this.navBarControl.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
-            this.navBarControl.Size = new System.Drawing.Size(198, 435);
+            this.navBarControl.Size = new System.Drawing.Size(198, 706);
             this.navBarControl.SmallImages = this.navbarImageCollection;
             this.navBarControl.StoreDefaultPaintStyleName = true;
             this.navBarControl.TabIndex = 1;
@@ -268,7 +268,7 @@
             this.xtraTabControl1.Location = new System.Drawing.Point(0, 0);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(812, 435);
+            this.xtraTabControl1.Size = new System.Drawing.Size(951, 706);
             this.xtraTabControl1.TabIndex = 1;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -278,7 +278,7 @@
             // 
             this.xtraTabPage1.Controls.Add(this.grdReport);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(806, 407);
+            this.xtraTabPage1.Size = new System.Drawing.Size(945, 678);
             this.xtraTabPage1.Text = "Grid";
             // 
             // grdReport
@@ -288,7 +288,7 @@
             this.grdReport.Location = new System.Drawing.Point(0, 0);
             this.grdReport.MainView = this.grdvReport;
             this.grdReport.Name = "grdReport";
-            this.grdReport.Size = new System.Drawing.Size(806, 407);
+            this.grdReport.Size = new System.Drawing.Size(945, 678);
             this.grdReport.TabIndex = 0;
             this.grdReport.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdvReport});
@@ -387,28 +387,28 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(1027, 22);
+            this.barDockControlTop.Size = new System.Drawing.Size(1166, 22);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 469);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1027, 0);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 740);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1166, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 22);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 447);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 718);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1027, 22);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 447);
+            this.barDockControlRight.Location = new System.Drawing.Point(1166, 22);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 718);
             // 
             // barButtonItem2
             // 
@@ -925,28 +925,28 @@
             this.barDockControl1.CausesValidation = false;
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
-            this.barDockControl1.Size = new System.Drawing.Size(1073, 0);
+            this.barDockControl1.Size = new System.Drawing.Size(1212, 0);
             // 
             // barDockControl2
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 469);
-            this.barDockControl2.Size = new System.Drawing.Size(1073, 26);
+            this.barDockControl2.Location = new System.Drawing.Point(0, 740);
+            this.barDockControl2.Size = new System.Drawing.Size(1212, 26);
             // 
             // barDockControl3
             // 
             this.barDockControl3.CausesValidation = false;
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl3.Location = new System.Drawing.Point(0, 0);
-            this.barDockControl3.Size = new System.Drawing.Size(0, 469);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 740);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(1027, 0);
-            this.barDockControl4.Size = new System.Drawing.Size(46, 469);
+            this.barDockControl4.Location = new System.Drawing.Point(1166, 0);
+            this.barDockControl4.Size = new System.Drawing.Size(46, 740);
             // 
             // printPreviewSubItem1
             // 
@@ -1196,7 +1196,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 495);
+            this.ClientSize = new System.Drawing.Size(1212, 766);
             this.Controls.Add(this.splitContainerControl);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
